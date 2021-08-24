@@ -33,7 +33,7 @@ server.get('/drink/favorite' , crud.getFavoriteDrinksData)
 
 
 
-//https://localhost/drink/favorite/:slug
+//https://localhost:3050/drink/favorite/:slug
 server.delete('/drink/favorite/:slug' ,crud.deleteFavoriteData)
 
 server.put('/drink/favorite/:slug' ,crud.updateFavoriteDrink )

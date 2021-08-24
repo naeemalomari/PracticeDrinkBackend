@@ -9,7 +9,7 @@ const createFavoriteDrink = async (req,res) => {
         idDrink
     }=req.body;
     MyDrinks.find({strDrink:strDrink} ,(error,data) => {
-        const slug = strDrink.lowerCase().split(' ').join('-');
+        const slug = strDrink.toLowerCase().split(' ').join('-');
         if(data.length > 0) {
             res.send('data is already exits');
         }else{
